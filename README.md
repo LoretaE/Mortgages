@@ -5,7 +5,7 @@ The mortgages model is under development.
 
 The mortgages model has 2 goals:
 * Prediction  - focused on predicting the mortgages amounts.
-* Inference - focused to understand the relationship between the features and target.
+* Inference - focused on understanding the relationship between the features and mortgages amount.
 
 Data set obtained from [Registrų centras](https://www.registrucentras.lt/p/1561) with Creative Commons Attribution 4.0 
 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.lt)) license. 
