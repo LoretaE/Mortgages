@@ -67,5 +67,3 @@ sns.boxplot(x=hipoteka['max_amount'])
 plt.show()
 
 hipoteka.to_csv('Data/hipoteka_clean.csv', index=False)
-
-
