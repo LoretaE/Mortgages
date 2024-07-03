@@ -67,15 +67,13 @@ hipoteka.drop(max_amount_out, inplace=True)
 print(hipoteka.max_amount.value_counts())
 
 plt.figure(figsize=(12, 6))
-sns.boxplot(x=hipoteka['skol_amziaus_grupe'], y=hipoteka['max_amount'])
+sns.boxplot(x=hipoteka['max_amount'])
 plt.show()
-
 
 #  Exploring data about municipalities, districts
 print(hipoteka.st_sav_aps_pav.value_counts())
 
 #  Creating 2 separate dataframes for realizing EDA in 2 scopes: for 5 largest municipalities and 10 districts.
-
 largest_mun = ['Vilniaus m. sav.', 'Kauno m. sav.', 'Klaipėdos m. sav.', 'Šiaulių m. sav.', 'Panevėžio m. sav.']
 hipoteka_mun_5 = hipoteka.loc[hipoteka['st_sav_aps_pav'].isin(largest_mun)]
 print(hipoteka_mun_5.st_sav_aps_pav.value_counts())
