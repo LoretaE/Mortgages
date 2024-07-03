@@ -36,12 +36,10 @@ print('\n Value counts')
 for col in hipoteka.columns:
     print(hipoteka[col].value_counts())
 
-
-
 #  Exploring data about municipalities, districts
 print(hipoteka.st_sav_aps_pav.value_counts())
 
-#  2 separate dataframes created for realizing EDA in 2 scopes: for 5 largest municipalities and 10 districts.
+# 2 separate dataframes created for realizing EDA in 2 scopes: for 5 largest municipalities and 10 districts.
 
 largest_mun = ['Vilniaus m. sav.', 'Kauno m. sav.', 'Klaipėdos m. sav.', 'Šiaulių m. sav.', 'Panevėžio m. sav.']
 hipoteka_mun_5 = hipoteka.loc[hipoteka['st_sav_aps_pav'].isin(largest_mun)]
