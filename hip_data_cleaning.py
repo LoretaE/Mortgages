@@ -9,9 +9,9 @@ pd.set_option('display.width', 1000)
 hipoteka = pd.read_csv('Data/Stsr_AD_hip_ik_skolininkai_nuo_2021.csv', delimiter='|')
 
 # Exploring data (types, missing values, statistical info)
-# print(hipoteka.head())
-# print(hipoteka.describe())
-# print(hipoteka.info())
+print(hipoteka.head())
+print(hipoteka.describe())
+print(hipoteka.info())
 
 # Deleting data of credits taken by companies
 print(hipoteka.imones.unique())
@@ -70,18 +70,4 @@ plt.figure(figsize=(12, 6))
 sns.boxplot(x=hipoteka['max_amount'])
 plt.show()
 
-#  Exploring data about municipalities, districts
-print(hipoteka.st_sav_aps_pav.value_counts())
-
-#  Creating 2 separate dataframes for realizing EDA in 2 scopes: for 5 largest municipalities and 10 districts.
-largest_mun = ['Vilniaus m. sav.', 'Kauno m. sav.', 'Klaipėdos m. sav.', 'Šiaulių m. sav.', 'Panevėžio m. sav.']
-hipoteka_mun_5 = hipoteka.loc[hipoteka['st_sav_aps_pav'].isin(largest_mun)]
-print(hipoteka_mun_5.st_sav_aps_pav.value_counts())
-
-hipoteka.replace(to_replace=['Vilniaus m. sav.', 'Kauno m. sav.', 'Klaipėdos m. sav.', 'Šiaulių m. sav.',
-                             'Panevėžio m. sav.'],
-                             value=['Vilniaus apskr.', 'Kauno apskr.', 'Klaipėdos apskr.', 'Šiaulių apskr.',
-                                    'Panevėžio apskr.'], inplace=True)
-print(hipoteka.st_sav_aps_pav.value_counts())
-print(hipoteka.info())
-print(hipoteka.head())
+hipoteka.to_csv('Data/hipoteka_clean.csv', index=False)
