@@ -41,9 +41,7 @@ for col in hipoteka.columns:
 #  Exploring data about municipalities, districts
 print(hipoteka.st_sav_aps_pav.value_counts())
 
-#  Dataset includes data from 5 largest municipalities - Vilnius, Kaunas, Klaipeda, Siauliai, Panavezys.
-#  Also, data from 10 districts provided. Therefore, 2 separate dataframes are created for realizing EDA for
-#  5 largest municipalities and 10 districts.
+#  2 separate dataframes created for realizing EDA in 2 scopes: for 5 largest municipalities and 10 districts.
 
 largest_mun = ['Vilniaus m. sav.', 'Kauno m. sav.', 'Klaipėdos m. sav.', 'Šiaulių m. sav.', 'Panevėžio m. sav.']
 hipoteka_mun_5 = hipoteka.loc[hipoteka['st_sav_aps_pav'].isin(largest_mun)]
@@ -55,15 +53,4 @@ hipoteka.replace(to_replace=['Vilniaus m. sav.', 'Kauno m. sav.', 'Klaipėdos m.
                                     'Panevėžio apskr.'], inplace=True)
 print(hipoteka.st_sav_aps_pav.value_counts())
 print(hipoteka.info())
-
-
-
-# sns.boxplot(data=hipoteka, x='skol_amnt_grupe', y='skol_amziaus_grupe', hue='imones')
-# plt.show()
-# sns.boxplot(data=hipoteka, x='imones', y='skol_amziaus_grupe')
-# plt.show()
-
-#  Exploring missing "skol_amziaus_grupe" values, replacing wrong value -
-# print(hipoteka.groupby('imones')['skol_amziaus_grupe'].value_counts())
-
 
