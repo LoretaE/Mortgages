@@ -41,17 +41,12 @@ index_pledges = hipoteka[(hipoteka['st_tipas'] == 'Sutartinis_ikeitimas') |
 hipoteka.drop(index_pledges, inplace=True)
 
 #  Max mortgage amount - from str to integer
-hipoteka['max_amount'] = hipoteka['pri_dydis_rez']
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('iki 10 tūk.', 10000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 10 tūk. iki 50 tūk.', 50000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 50 tūk. iki 100 tūk.', 100000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 100 tūk. iki 500 tūk.', 500000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 500 tūk. Iki 1 mln.', 1000000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 1 mln. Iki 5 mln.', 5000000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 5 mln. Iki 10 mln.', 10000000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 10 mln. Iki 50 mln.', 50000000)
-hipoteka['max_amount'] = hipoteka['max_amount'].replace('nuo 50 mln. Iki 100 mln.', 100000000)
+amount_to_int = {'iki 10 tūk.': 10000, 'nuo 10 tūk. iki 50 tūk.': 50000,'nuo 50 tūk. iki 100 tūk.': 100000,
+                 'nuo 100 tūk. iki 500 tūk.': 500000, 'nuo 500 tūk. Iki 1 mln.': 1000000,
+                 'nuo 1 mln. Iki 5 mln.': 5000000, 'nuo 5 mln. Iki 10 mln.': 10000000,
+                 'nuo 10 mln. Iki 50 mln.': 50000000, 'nuo 50 mln. Iki 100 mln.': 100000000}
 
+hipoteka['max_amount'] = hipoteka['pri_dydis_rez'].map(amount_to_int)
 hipoteka.drop('pri_dydis_rez', axis=1, inplace=True)
 
 #  Detecting outliers
