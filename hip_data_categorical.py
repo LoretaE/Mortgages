@@ -1,6 +1,4 @@
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
@@ -36,3 +34,4 @@ hipoteka = hipoteka.drop(['skol_amziaus_grupe', 'age', 'st_ireg_ketv'], axis=1)
 print(hipoteka.info())
 
 print(hipoteka.head())
+hipoteka.to_csv('Data/hipoteka_cat.csv', index=False)
