@@ -92,7 +92,7 @@ def eda(districts):
     plt.show()
 
     g = sns.FacetGrid(data=districts, col='District', col_wrap=2, height=4)
-    g.map(sns.countplot, 'date_quarter', hue='Type of mortgage', order=['2021Q1', '2021Q2', '2021Q3', '2021Q4', '2022Q1', '2022Q2',
+    g.map(sns.countplot, 'date_quarter', order=['2021Q1', '2021Q2', '2021Q3', '2021Q4', '2022Q1', '2022Q2',
                                                 '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3'])
     g.set_axis_labels('Date (quarter)', 'Frequency')
     g.set_xticklabels(labels=['2021Q1', '2021Q2', '2021Q3', '2021Q4', '2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1',
