@@ -30,6 +30,18 @@ Compulsory mortgage amounts are much lower - the majority up to €50,000.  A qu
 ![img_1.png](Images%2Fimg_1.png)
 
 ### Distribution of mortgages by age in different districts
+In Vilnius district, there is no correlation between clients' age and mortgage amount  - no matter what age group
+the client belongs to, mortgage amount is the same - the majority ranges from 50-100 K€ to 500 K€ and a quarter reaches €1 
+million.
+Data from Klaipėda, Kaunas and Šiauliai districts shows diversified situation - based on age group, the mortgage amount can 
+differ. The larger mortgage loans (the majority amounted to 500 K€) were granted to clients:
+* aged between 18 and 55 in Kaunas district;  
+* aged between 25 and 45 in Klaipėda district;
+* aged between 25 and 45, also between 65-85 in Šiauliai district.
+In general, 50-100 K€ mortgages were provided for the majority of clients from smaller districts, with just a few 
+outliers for the oldest group of clients in Panevėžys (an increase to 500 K€), Utena and Telšiai districts 
+(a decrease to 50 K€). In Alytus district, there is also a spike in the amount of mortgages for clients aged 35-45 
+(up to 500 K€).
 
 ![img_2.png](Images%2Fimg_2.png)
 
