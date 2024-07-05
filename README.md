@@ -15,7 +15,7 @@ Technologies used:
 * Pandas
 * Seaborn
 * Matplotlib
-* 
+
 ### Distribution of mortgages by age
 In all districts, the majority of contractual mortgages for clients aged 18-55 years ranged from €50,000 (€100,000) 
 to €500,000, 25% of such mortgages amounting to €1 million. The mortgages of clients aged over 55 were smaller -
