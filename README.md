@@ -29,6 +29,11 @@ Compulsory mortgage amounts are much lower - the majority up to €50,000.  A qu
 
 ![img_1.png](Images%2Fimg_1.png)
 
+### Distribution of mortgages by age in different districts
+
+![img_2.png](Images%2Fimg_2.png)
+
+
 
 
 
