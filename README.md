@@ -12,6 +12,6 @@ Data cleaning, missing data management, detecting and removing outliers were per
  
 ### Mortage distribution in all districts by age
 
-
+![img.png](Images%2Fimg.png)
 
 
