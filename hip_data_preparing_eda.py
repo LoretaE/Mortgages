@@ -56,7 +56,7 @@ def districts_10(hipoteka):
                 'Tauragės apskr.': 'Tauragė', 'Telšių apskr.': 'Telšiai', 'Utenos apskr.': 'Utena'}
     districts = hipoteka.copy()
     districts['District'] = districts['District'].map(mun_conv)
-
+    districts.to_csv('Data\districts.csv')
     return districts
 
 
