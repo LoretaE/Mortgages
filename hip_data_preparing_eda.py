@@ -80,7 +80,7 @@ def eda(districts):
     plt.ylim(0, 1200000)
     plt.show()
 
-    g = sns.FacetGrid(data=districts, col='District', col_wrap=2, height=4)
+    g = sns.FacetGrid(data=districts, col='District', col_wrap=2, height=4, ylim=(0, 1100000))
     g.map(sns.boxplot, 'age_group', 'max_amount')
     g.set_axis_labels('Age group', 'Max mortgage amount')
     plt.show()

@@ -1,15 +1,15 @@
-# Customers Age and District Impact on the Mortgage Amount
+# Customers Age and District Impact on the Mortgage Amount in Lithuania
 
 ### Project overview:
 
 The main results of the project:
-* Analysed and visualised customer's age group and district impact on the mortgage amount.
+* Analysed and visualised customer's age group and district impact on the maximum amount of mortgage.
 
 Data set obtained from [Registrų centras](https://www.registrucentras.lt/p/1561) with Creative Commons Attribution 4.0 
 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.lt)) license. 
 
 Data cleaning, missing data management, detecting and removing outliers were performed. 
- 
+
 ### Distribution of mortgages by age
 
 In all districts, the majority of contractual mortgages for clients aged 18-55 years ranged from €50,000 (€100,000) 
@@ -45,7 +45,16 @@ outliers for the oldest group of clients in Panevėžys (an increase to 500 K€
 
 ![img_2.png](Images%2Fimg_2.png)
 
+### Mortgages trend
+The number of mortgage granted is dynamic. However, it is not significant, especially for the last quarter - 2023Q3. 
+![img_3.png](Images%2Fimg_3.png)
+![img_4.png](Images%2Fimg_4.png)
 
+### Conclusions
+1. There is a correlation between client's age and max amount of mortgage, except 3 districts (Vilnius, Marijampolė and 
+Tauragė).
+2. Districts have an impact on the mortgages as well - the largest contractual mortgages were granted in 4 largest districts 
+(Vilnius, Klaipėda, Kaunas and Šiauliai).
 
 
 
