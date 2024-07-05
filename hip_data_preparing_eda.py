@@ -69,6 +69,7 @@ def eda(districts):
     plt.title(f'Mortgage Distribution in Districts by Age')
     plt.xlabel('Age group')
     plt.ylabel('Max mortgage amount')
+    plt.ylim(0, 1200000)
     plt.show()
 
     plt.figure(figsize=(12, 6))
@@ -76,6 +77,7 @@ def eda(districts):
     plt.title(f'Mortgage Distribution in Districts')
     plt.xlabel('District')
     plt.ylabel('Max mortgage amount')
+    plt.ylim(0, 1200000)
     plt.show()
 
     g = sns.FacetGrid(data=districts, col='District', col_wrap=2, height=4)
