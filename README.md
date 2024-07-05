@@ -10,7 +10,7 @@ Data set obtained from [Registrų centras](https://www.registrucentras.lt/p/1561
 
 Data cleaning, missing data management, detecting and removing outliers were performed. 
  
-### Mortage distribution in all districts by age
+### Distribution of mortgages by age
 
 In all districts, the majority of contractual mortgages for clients aged 18-55 years ranged from €50,000 (€100,000) 
 to €500,000, 25% of such mortgages amounting to €1 million. The mortgages of clients aged over 55 were smaller -
@@ -19,6 +19,12 @@ Compulsory mortgage amounts are much lower - the majority up to €50,000.  A qu
 between 25 and 85 and only a few younger clients have a compulsory mortgage up to €100,000. 
 
 ![img.png](Images%2Fimg.png)
+
+### Distribution of mortgages by age in different districts
+
+
+
+
 
 
 
