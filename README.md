@@ -20,9 +20,14 @@ between 25 and 85 and only a few younger clients have a compulsory mortgage up t
 
 ![img.png](Images%2Fimg.png)
 
-### Distribution of mortgages by age in different districts
+### Distribution of mortgages in different districts
+In Vilnius, Klaipėda, Kaunas and Šiauliai districts, which include the municipalities of the 4 largest cities, 
+contractual mortgages ranged from €50,000 (€100,000) to €500,000, and a quarter of mortgages reach €1 million. 
+The situation is different in smaller districts (even in Panevėžys, which includes the 5th larger city) - majority 
+of contractual mortgages ranged from  €50,000 to €100,000.
+Compulsory mortgage amounts are much lower - the majority up to €50,000.  A quarter of compulsory mortgage reaches €100,000. 
 
-
+![img_1.png](Images%2Fimg_1.png)
 
 
 
